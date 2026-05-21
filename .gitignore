@@ -19,3 +19,57 @@ target
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# JS / Node
+node_modules/
+.next/
+.cache/
+dist/
+build/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Audio assets — DO NOT commit raw audio to git; use git-lfs or external storage
+*.wav
+*.aif
+*.aiff
+*.flac
+*.mp3
+*.ogg
+*.m4a
+*.opus
+
+# DAW project files — large, binary, history-poisoning if committed
+*.als
+*.alp
+*.adg
+*.adv
+*.flp
+*.rpp
+*.logicx
+*.sng
+*.ptx
+*.ptxt
+
+# Audio renders & exports
+renders/
+exports/
+bounces/
+
+# Plugin builds — typically reproducible from source
+*.vst3
+*.clap
+*.component
