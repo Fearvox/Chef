@@ -1,0 +1,23 @@
+# Chef Cursor Rules
+
+## Project Context
+`Chef` is a high-performance music/DSP monorepo.
+- **Runtime**: Bun (for JS/TS)
+- **Monorepo Structure**: apps/*, packages/*
+
+## Core Directives
+1. **Always use Bun**: For any task involving package management, running scripts, or testing, use `bun`.
+2. **TypeScript Strictness**: Prefer explicit types over `any`. Use `const enum` for performance-critical constants.
+3. **Rust/DSP**: For VST/DSP tasks, prioritize `nih-plug` patterns. Avoid heap allocations in the audio thread.
+4. **Directory Organization**: 
+   - Apps go in `apps/`.
+   - Shared libraries go in `packages/`.
+5. **AI Guidance**: Refer to `CLAUDE.md` and `GEMINI.md` for architectural mandates.
+
+## Formatting
+- Use **Biome** for linting and formatting.
+- Indentation: 2 spaces.
+- Semi-colons: Preferred.
+
+## File Header Patterns
+- For new DSP files, add a brief description of the algorithm and its complexity.
