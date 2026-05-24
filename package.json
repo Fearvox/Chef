@@ -1,0 +1,16 @@
+{
+	"name": "chef",
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"dev": "bun --filter '*' dev",
+		"test": "bun test",
+		"lint": "bun x biome check ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "latest"
+	}
+}
